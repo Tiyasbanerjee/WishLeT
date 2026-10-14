@@ -3,20 +3,46 @@ import { useState } from 'react'
 import './App.css'
 
 import CardConFig from './components/CardConFig'
+import Edit from './components/edit'
 
 function App() {
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(2)
 
   return (
+  <>
   
-    count===1 && (
-    <div className='config'>
+  {/*config page*/}
+
+  {
+  count===1 && (
+  
+  <div className='config'>
 
       <CardConFig/>
     
-    </div>
+  </div>
+  
   )
+  }
+  
+  {/*setting page*/}
 
+  {  
+  count===2 && (
+    
+  <div className='edit'>
+    
+    <Edit/>
+  
+  </div>
+  
+  )
+  }
+
+
+  {/*end*/}
+
+</>
 );
 
 }
