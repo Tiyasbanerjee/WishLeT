@@ -4,9 +4,10 @@ import './App.css'
 
 import CardConFig from './components/CardConFig'
 import Edit from './components/edit'
+import Letter from './components/Letter'
 
 function App() {
-  const [count, setCount] = useState(2)
+  const [count, setCount] = useState(3)
 
   return (
   <>
@@ -39,6 +40,20 @@ function App() {
   )
   }
 
+
+  {/*Letter page*/}
+
+  {
+    count===3 && (
+      
+      <div className='Letter'>
+        
+        <Letter/>
+      
+      </div>
+    
+  )
+  }
 
   {/*end*/}
 

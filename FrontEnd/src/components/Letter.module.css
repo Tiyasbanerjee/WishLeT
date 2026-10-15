@@ -1,0 +1,26 @@
+.container{
+
+    width: 95%;
+    max-width: 800px;
+
+    aspect-ratio: 3/2;  
+
+    position: relative;
+}
+
+.address{
+    height: 40%;
+    width: 35%;
+    
+    background-color: snow;
+    
+
+    border: 1px solid black;
+    
+    border-radius: 2%;
+
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
